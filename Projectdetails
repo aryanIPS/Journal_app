@@ -1,0 +1,19 @@
+/in this project we are creating a Journal app./
+
+09/10/2025------>
+Till date i was created a,
+
+controller,
+entity,
+repository,
+service
+
+
+This project overview-->
+Controller (APIs are written)
+
+Service (save and getall)
+
+Repository (Mongodb connection)
+
+entity (Collections of database)
