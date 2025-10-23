@@ -50,8 +50,8 @@ public class JournalEntryControllerv2 {
 //        myEntry.setDate(LocalDateTime.now());
         JournalEntry old = journalEntryService.findById(myid).orElse(null);
         if(old != null){
-            old.setContent(newEntry.getContent() !=null && newEntry.equals("") ? newEntry.getContent() : old.getContent());
-            old.setName(newEntry.getName() != null && newEntry.getName().equals("") ? newEntry.getName() : old.getName());
+            old.setContent(newEntry.getContent() !=null && !newEntry.equals("") ? newEntry.getContent() : old.getContent());
+            old.setName(newEntry.getName() != null && !newEntry.getName().equals("") ? newEntry.getName() : old.getName());
         }
         journalEntryService.saveEntry( old );
         return old;
